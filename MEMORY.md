@@ -29,4 +29,4 @@
 ### 2026-05-06 - 文档体系重建
 - 建立 `docs/new/` 新文档体系
 - 规范 DETAIL/SNAPSHOT/SCHEMA/DATAINIT 文档类型
-- 详见: `demas/docs/new/DOCUMENTATION-PLAN.md`
+- 详见: `cli-specialtrucks/demas/docs/new/DOCUMENTATION-PLAN.md`

@@ -9,7 +9,7 @@
 
 ```
 /Users/liuqiao/ai/workspace/
-├── demas/                    # DEMAS 自动化营销系统
+├── cli-specialtrucks/demas/                    # DEMAS 自动化营销系统
 │   ├── apps/
 │   │   ├── server/           # 后端服务 (Port: 8000)
 │   │   └── desktop/          # 桌面端 (Port: 1420)
