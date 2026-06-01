@@ -19,11 +19,12 @@
       "type": "debugpy",
       "request": "launch",
       "cwd": "${workspaceFolder}/cli-specialtrucks/demas/apps/server",
+      "python": "${workspaceFolder}/cli-specialtrucks/demas/apps/server/.venv/bin/python",
       "module": "uvicorn",
       "args": [
         "src.main:app",
         "--host", "0.0.0.0",
-        "--port", "8000",
+        "--port", "18660",
         "--reload"
       ],
       "jinja": false,
