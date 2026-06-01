@@ -47,7 +47,7 @@
 
 ### 螺乐好房
 
-**待创建**: `projects/luole-haofang/docs/`
+**待创建**: `projects/luolehaofang-new/docs/`
 
 ---
 
