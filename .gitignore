@@ -1,0 +1,8 @@
+# 🎯 阻断外层 Git 仓库向下染指具体的代码项目
+demas/
+luolehaofang-new/
+luolehaofang-old/
+test/
+
+# 顺便把 Mac 系统的垃圾临时文件也挡在外层
+.DS_Store
