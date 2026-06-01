@@ -1,0 +1,122 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "🚀 DEMAS Full Stack (Server + Desktop)",
+      "configurations": ["DEMAS Server", "DEMAS Desktop"],
+      "stopAll": true
+    },
+    {
+      "name": "🚀 Junke Server + Junke Plus",
+      "configurations": ["JunkeServer Spring Boot", "Junke Plus Spring Boot"],
+      "stopAll": true
+    }
+  ],
+  "configurations": [
+    // ==================== DEMAS ====================
+    {
+      "name": "DEMAS Server",
+      "type": "debugpy",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/cli-specialtrucks/demas/apps/server",
+      "module": "uvicorn",
+      "args": [
+        "src.main:app",
+        "--host", "0.0.0.0",
+        "--port", "8000",
+        "--reload"
+      ],
+      "jinja": false,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/cli-specialtrucks/demas/apps/server/src"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "DEMAS Desktop (Tauri Dev)",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/cli-specialtrucks/demas/apps/desktop",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "tauri", "dev"],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "DEMAS Desktop (Vite Only)",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/cli-specialtrucks/demas/apps/desktop",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "integratedTerminal"
+    },
+
+    // ==================== Junke Server (Spring Boot) ====================
+    {
+      "name": "JunkeServer Spring Boot",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "com.cloudsub.app.junkeServer.Application",
+      "projectName": "junkeServer",
+      "cwd": "${workspaceFolder}/luolehaofang-old/junkeserver",
+      "vmArgs": "-Dspring.profiles.active=dev",
+      "env": {
+        "JAVA_OPTS": "-Xmx512m"
+      },
+      "console": "integratedTerminal"
+    },
+
+    // ==================== Junke Plus (Spring Boot) ====================
+    {
+      "name": "Junke Plus Spring Boot",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "cn.net.junfa.junkeplus.web.WebApplication",
+      "projectName": "junke-plus",
+      "cwd": "${workspaceFolder}/luolehaofang-old/junke-plus",
+      "vmArgs": "-Dspring.profiles.active=dev",
+      "env": {
+        "JAVA_OPTS": "-Xmx512m"
+      },
+      "console": "integratedTerminal"
+    },
+
+    // ==================== Junke Club Android ====================
+    {
+      "name": "Junke Club Android (Attach)",
+      "type": "android",
+      "request": "attach",
+      "appSrcRoot": "${workspaceFolder}/luolehaofang-old/junke_club_android/app/src/main",
+      "adbPort": 5037,
+      "processName": "com.junke.club"
+    },
+
+    // ==================== Junke QY MP (Uni-app) ====================
+    {
+      "name": "Junke QY MP (H5 Dev)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}/luolehaofang-old/junke_qy_mp",
+      "sourceMapPathOverrides": {
+        "webpack:///./*": "${webRoot}/*"
+      }
+    },
+    {
+      "name": "Junke QY MP (WeChat DevTools)",
+      "type": "chrome",
+      "request": "attach",
+      "port": 9222,
+      "webRoot": "${workspaceFolder}/luolehaofang-old/junke_qy_mp",
+      "sourceMapPathOverrides": {
+        "webpack:///./*": "${webRoot}/*"
+      }
+    }
+  ]
+}
