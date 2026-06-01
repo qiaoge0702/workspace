@@ -8,8 +8,8 @@
 ## 项目目录结构
 
 ```
-/Users/liuqiao/ai/
-├── cli-specialtrucks/demas/                    # DEMAS 自动化营销系统
+/Users/liuqiao/ai/workspace/
+├── demas/                    # DEMAS 自动化营销系统
 │   ├── apps/
 │   │   ├── server/           # 后端服务 (Port: 8000)
 │   │   └── desktop/          # 桌面端 (Port: 1420)
@@ -17,7 +17,7 @@
 │       ├── new/              # 新文档体系
 │       └── old/              # 旧版参考
 │
-└── luole-haofang/            # 螺乐好房项目 (待创建)
+└── luolehaofang-old/            # 螺乐好房项目 (待创建)
     ├── mini-program/         # 微信小程序前端
     ├── server/               # 后端服务
     └── docs/                 # 项目文档

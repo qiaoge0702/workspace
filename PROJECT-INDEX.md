@@ -10,17 +10,17 @@
 
 | 文档类型 | 路径 |
 |----------|------|
-| **系统总览** | `../cli-specialtrucks/demas/docs/new/DEMAS-OVERVIEW.md` |
-| **开发规范** | `../cli-specialtrucks/demas/docs/old/DEVELOPMENT-STANDARDS.md` |
-| **UI/UE规范** | `../cli-specialtrucks/demas/docs/new/UIUE-DESIGN-GUIDE.md` |
-| **完整索引** | `../cli-specialtrucks/demas/docs/DEMAS-INDEX.md` |
+| **系统总览** | `demas/docs/new/DEMAS-OVERVIEW.md` |
+| **开发规范** | `demas/docs/old/DEVELOPMENT-STANDARDS.md` |
+| **UI/UE规范** | `demas/docs/new/UIUE-DESIGN-GUIDE.md` |
+| **完整索引** | `demas/docs/DEMAS-INDEX.md` |
 
 ### 代码导航
 
 | 模块 | 路径 |
 |------|------|
-| **后端服务** | `../cli-specialtrucks/demas/apps/server/` |
-| **桌面端** | `../cli-specialtrucks/demas/apps/desktop/` |
+| **后端服务** | `demas/apps/server/` |
+| **桌面端** | `demas/apps/desktop/` |
 | **数据库** | `/Users/liuqiao/.demas/db/main.sqlite` |
 
 ---

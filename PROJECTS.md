@@ -17,7 +17,7 @@
 
 **全称**: Digital Employee Managed Automation System  
 **定位**: 数字员工管理的自动化营销系统  
-**路径**: `/Users/liuqiao/ai/cli-specialtrucks/demas/`
+**路径**: `/Users/liuqiao/ai/workspace/demas/`
 
 ### 子系统
 
@@ -31,9 +31,9 @@
 
 ### 文档入口
 
-- **索引**: `../cli-specialtrucks/demas/docs/DEMAS-INDEX.md`
-- **开发规范**: `../cli-specialtrucks/demas/docs/new/DEVELOPMENT-STANDARDS.md`
-- **系统总览**: `../cli-specialtrucks/demas/docs/new/DEMAS-OVERVIEW.md`
+- **索引**: `demas/docs/DEMAS-INDEX.md`
+- **开发规范**: `demas/docs/new/DEVELOPMENT-STANDARDS.md`
+- **系统总览**: `demas/docs/new/DEMAS-OVERVIEW.md`
 
 ---
 

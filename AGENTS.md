@@ -35,15 +35,15 @@
 
 ### DEMAS 系统
 
-**快速参考**: `../cli-specialtrucks/demas/docs/DEMAS-INDEX.md`
+**快速参考**: `demas/docs/DEMAS-INDEX.md`
 
 | 层级 | 路径 | 说明 |
 |------|------|------|
-| 系统总览 | `../cli-specialtrucks/demas/docs/new/DEMAS-OVERVIEW.md` | 子系统功能、协同流程、架构原则 |
-| 开发规范 | `../cli-specialtrucks/demas/docs/old/DEVELOPMENT-STANDARDS.md` | 分层架构、目录结构、命名规范 |
-| UI/UE规范 | `../cli-specialtrucks/demas/docs/new/UIUE-DESIGN-GUIDE.md` | 视觉规范、组件规范、交互规范 |
+| 系统总览 | `demas/docs/new/DEMAS-OVERVIEW.md` | 子系统功能、协同流程、架构原则 |
+| 开发规范 | `demas/docs/old/DEVELOPMENT-STANDARDS.md` | 分层架构、目录结构、命名规范 |
+| UI/UE规范 | `demas/docs/new/UIUE-DESIGN-GUIDE.md` | 视觉规范、组件规范、交互规范 |
 
-**子系统文档**: 详见 `../cli-specialtrucks/demas/docs/DEMAS-INDEX.md`
+**子系统文档**: 详见 `demas/docs/DEMAS-INDEX.md`
 
 ### 螺乐好房
 
