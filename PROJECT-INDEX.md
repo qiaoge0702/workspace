@@ -21,7 +21,7 @@
 |------|------|
 | **后端服务** | `cli-specialtrucks/demas/apps/server/` |
 | **桌面端** | `cli-specialtrucks/demas/apps/desktop/` |
-| **数据库** | `/Users/liuqiao/.demas/db/main.sqlite` |
+| **数据库** | `/Users/liuqiao/.demas/db/main/*.db` |
 
 ---
 
