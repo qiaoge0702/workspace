@@ -16,8 +16,7 @@
 ## DEMAS 系统
 
 **全称**: Digital Employee Managed Automation System  
-**定位**: 数字员工管理的自动化营销系统  
-**路径**: `/Users/liuqiao/ai/workspace/cli-specialtrucks/demas/`
+**路径**: `cli-specialtrucks/demas/`
 
 ### 子系统
 
@@ -40,16 +39,15 @@
 ## 螺乐好房
 
 **定位**: 房地产小程序，对标贝壳找房  
-**路径**: `/Users/liuqiao/.openclaw/workspace/luole-haofang/` (待创建)
+**路径**: `luolehaofang-new/`
 
 ### 技术方案（初步）
 
-| 层级 | 技术 | 说明 |
-|------|------|------|
-| 前端 | 微信小程序原生 / Taro | 跨平台小程序 |
-| 后端 | Python + FastAPI / Node.js | 待定 |
-| 数据库 | PostgreSQL + Redis | 主库 + 缓存 |
-| 部署 | 腾讯云 / 阿里云 | 待定 |
+| 层级 | 技术 |
+|------|------|
+| 前端 | 微信小程序原生 / Taro |
+| 后端 | Python + FastAPI / Node.js |
+| 数据库 | PostgreSQL + Redis |
 
 ### 待办
 
