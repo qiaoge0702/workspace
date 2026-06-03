@@ -1,0 +1,372 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "/Users/liuqiao/ai/workspace",
+      "repoRoot": "/Users/liuqiao/ai/workspace",
+      "contextInjection": "always",
+      "elevatedDefault": "on",
+      "models": {
+        "moonshot/kimi-k2.6": {
+          "alias": "Kimi",
+          "params": {
+            "thinking": {
+              "type": "disabled"
+            }
+          }
+        }
+      },
+      "model": {
+        "primary": "moonshot/kimi-k2.6"
+      },
+      "bootstrapMaxChars": 64000,
+      "bootstrapTotalMaxChars": 300000,
+      "contextLimits": {
+        "memoryGetMaxChars": 35000,
+        "memoryGetDefaultLines": 300,
+        "toolResultMaxChars": 45000,
+        "postCompactionMaxChars": 6000
+      },
+      "compaction": {
+        "mode": "safeguard",
+        "midTurnPrecheck": { "enabled": true },
+        "reserveTokens": 20000,
+        "keepRecentTokens": 50000,
+        "maxHistoryShare": 0.6,
+        "recentTurnsPreserve": 10,
+        "truncateAfterCompaction": false,
+        "maxActiveTranscriptBytes": "300mb",
+        "notifyUser": true
+      },
+      "memorySearch": {
+        "enabled": false
+      }
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "17611337211"
+    },
+    "port": 18789,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send",
+        "sms.search"
+      ]
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "profile": "coding",
+    "web": {
+      "search": {
+        "provider": "duckduckgo",
+        "enabled": true
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "moonshot": {
+        "enabled": true
+      },
+      "feishu": {
+        "enabled": true
+      },
+      "duckduckgo": {
+        "enabled": true
+      },
+      "memory-core": {
+        "config": {
+          "dreaming": {
+            "enabled": true
+          }
+        },
+        "enabled": true
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "moonshot": {
+        "baseUrl": "https://api.moonshot.cn/v1",
+        "api": "openai-completions",
+        "params": {
+          "temperature": 0.6,
+          "top_p": 0.9
+        },
+        "models": [
+          {
+            "id": "kimi-k2.6",
+            "name": "Kimi K2.6",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0.95,
+              "output": 4,
+              "cacheRead": 0.16,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 262144,
+            "contextTokens": 240000
+          }
+        ]
+      }
+    }
+  },
+  "auth": {
+    "profiles": {
+      "moonshot:default": {
+        "provider": "moonshot",
+        "mode": "api_key"
+      }
+    }
+  },
+  "channels": {
+    "feishu": {
+      "enabled": true,
+      "appId": "cli_a92ba0141b789bb5",
+      "appSecret": "pDO0Zs5Ssey3nAexreApWeF44Vap2DGt",
+      "connectionMode": "websocket",
+      "domain": "feishu",
+      "groupPolicy": "open",
+      "requireMention": true,
+      "dmPolicy": "open",
+      "allowFrom": [
+        "*"
+      ],
+      "groupAllowFrom": [
+        "*"
+      ]
+    }
+  },
+  "hooks": {
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "bootstrap-extra-files": {
+          "enabled": true
+        },
+        "command-logger": {
+          "enabled": true
+        },
+        "compaction-notifier": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-06-03T08:30:24.139Z",
+    "lastRunVersion": "2026.5.27",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.5.27",
+    "lastTouchedAt": "2026-06-03T08:30:24.180Z"
+  },
+  "skills": {
+    "entries": {
+      "1password": {
+        "enabled": false
+      },
+      "bear-notes": {
+        "enabled": false
+      },
+      "blogwatcher": {
+        "enabled": false
+      },
+      "blucli": {
+        "enabled": false
+      },
+      "browser-automation": {
+        "enabled": false
+      },
+      "canvas": {
+        "enabled": false
+      },
+      "clawhub": {
+        "enabled": false
+      },
+      "diagram-maker": {
+        "enabled": false
+      },
+      "gemini": {
+        "enabled": false
+      },
+      "gh-issues": {
+        "enabled": false
+      },
+      "github": {
+        "enabled": false
+      },
+      "healthcheck": {
+        "enabled": false
+      },
+      "himalaya": {
+        "enabled": false
+      },
+      "mcporter": {
+        "enabled": false
+      },
+      "meme-maker": {
+        "enabled": false
+      },
+      "model-usage": {
+        "enabled": false
+      },
+      "nano-pdf": {
+        "enabled": false
+      },
+      "node-connect": {
+        "enabled": false
+      },
+      "node-inspect-debugger": {
+        "enabled": false
+      },
+      "notion": {
+        "enabled": false
+      },
+      "openai-whisper": {
+        "enabled": false
+      },
+      "oracle": {
+        "enabled": false
+      },
+      "python-debugpy": {
+        "enabled": false
+      },
+      "skill-creator": {
+        "enabled": false
+      },
+      "sonoscli": {
+        "enabled": false
+      },
+      "spike": {
+        "enabled": false
+      },
+      "summarize": {
+        "enabled": false
+      },
+      "taskflow": {
+        "enabled": false
+      },
+      "taskflow-inbox-triage": {
+        "enabled": false
+      },
+      "things-mac": {
+        "enabled": false
+      },
+      "tmux": {
+        "enabled": false
+      },
+      "video-frames": {
+        "enabled": false
+      },
+      "weather": {
+        "enabled": false
+      },
+      "xurl": {
+        "enabled": false
+      },
+      "apple-notes": {
+        "enabled": false
+      },
+      "apple-reminders": {
+        "enabled": false
+      },
+      "camsnap": {
+        "enabled": false
+      },
+      "coding-agent": {
+        "enabled": false
+      },
+      "discord": {
+        "enabled": false
+      },
+      "eightctl": {
+        "enabled": false
+      },
+      "gifgrep": {
+        "enabled": false
+      },
+      "gog": {
+        "enabled": false
+      },
+      "goplaces": {
+        "enabled": false
+      },
+      "imsg": {
+        "enabled": false
+      },
+      "obsidian": {
+        "enabled": false
+      },
+      "openai-whisper-api": {
+        "enabled": false
+      },
+      "openhue": {
+        "enabled": false
+      },
+      "ordercli": {
+        "enabled": false
+      },
+      "peekaboo": {
+        "enabled": false
+      },
+      "sag": {
+        "enabled": false
+      },
+      "session-logs": {
+        "enabled": false
+      },
+      "sherpa-onnx-tts": {
+        "enabled": false
+      },
+      "slack": {
+        "enabled": false
+      },
+      "songsee": {
+        "enabled": false
+      },
+      "spotify-player": {
+        "enabled": false
+      },
+      "trello": {
+        "enabled": false
+      },
+      "voice-call": {
+        "enabled": false
+      },
+      "wacli": {
+        "enabled": false
+      }
+    }
+  }
+}
