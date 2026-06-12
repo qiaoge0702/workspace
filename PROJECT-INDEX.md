@@ -23,11 +23,24 @@
 
 ## 螺乐好房
 
-### 文档
+### 文档入口
 
 | 类型 | 路径 | 状态 |
 |------|------|------|
-| 项目文档 | `luolehaofang-new/docs/` | 待创建 |
+| **文档总索引** | `luolehaofang-new/docs/0-OVERVIEW.md` | ✅ 已创建 |
+| 项目路线图 | `luolehaofang-new/docs/1-PROJECT-ROADMAP.md` | ✅ 已完成 |
+| 技术栈选型 | `luolehaofang-new/docs/2-ARCHITECTURE/2-1-TECH-STACK.md` | ✅ 已完成 |
+| 系统架构 | `luolehaofang-new/docs/2-ARCHITECTURE/2-2-SYSTEM-ARCHITECTURE.md` | ✅ 已完成 |
+| 数据架构 | `luolehaofang-new/docs/2-ARCHITECTURE/2-3-DATA-ARCHITECTURE.md` | ✅ 已完成 |
+| 后端规范 | `luolehaofang-new/docs/3-DETAILED-DESIGN/3-1-BACKEND-SPEC.md` | ✅ 已完成 |
+| 小程序规范 | `luolehaofang-new/docs/3-DETAILED-DESIGN/3-2-MINIPROGRAM-SPEC.md` | ✅ 已完成 |
+| 管理端规范 | `luolehaofang-new/docs/3-DETAILED-DESIGN/3-3-ADMIN-SPEC.md` | ✅ 已完成 |
+| 数据库设计 | `luolehaofang-new/docs/3-DETAILED-DESIGN/3-4-DATABASE-SCHEMA.md` | ✅ 已完成 |
+| UI设计规范 | `luolehaofang-new/docs/3-DETAILED-DESIGN/3-5-UI-DESIGN-SPEC.md` | ✅ 已完成 |
+| 埋点规范 | `luolehaofang-new/docs/3-DETAILED-DESIGN/3-6-TRACKING-SPEC.md` | ✅ 已完成 |
+| 详细需求总览 | `luolehaofang-new/docs/4-DETAILED-REQ/4-0-OVERVIEW.md` | ✅ 已完成 |
+| 用户权限模块 | `luolehaofang-new/docs/4-DETAILED-REQ/4-1-AUTH/` | ✅ 已完成 |
+| 房源管理模块 | `luolehaofang-new/docs/4-DETAILED-REQ/4-2-HOUSE/` | ✅ 已完成 |
 
 ### 代码
 
