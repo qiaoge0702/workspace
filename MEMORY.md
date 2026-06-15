@@ -74,3 +74,15 @@
 - user: 你好 assistant: 你好，老板。 [score=0.901 recalls=0 avg=0.620 source=memory/2026-06-05-0843.md:9-10]
 <!-- openclaw-memory-promotion:memory:memory/2026-06-05-0843.md:111:114 -->
 - | 文档 | 状态 | 评估 | |------|------|------| | `AGENTS.md` | ✅ 良好 | 知识图谱索引，结构清晰 | | `IDENTITY.md` | ⚠️ 需微调 | 角色定义完整，但可补充"Tyler"商务身份的详细边界 | [score=0.884 recalls=0 avg=0.620 source=memory/2026-06-05-0843.md:111-114]
+
+## Promoted From Short-Term Memory (2026-06-13)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-05-0843.md:115:117 -->
+- | `SOUL.md` | ✅ 良好 | 执行宪法，铁律明确 | | `TOOLS.md` | ⚠️ 轻量 | 物理环境标准，但缺"当前活跃项目技术栈速查" | | `USER.md` | ✅ 良好 | 所有者画像 + 防线清晰 | [score=0.846 recalls=0 avg=0.620 source=memory/2026-06-05-0843.md:115-117]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-05-0843.md:144:147 -->
+- | 项目 | 前端 | 后端 | 数据库 | 部署 | |------|------|------|--------|------| | DEMAS | Vue3 | Node.js/Express | PostgreSQL | Docker | | 螺乐好房 | 微信小程序 | Node.js | MySQL | 腾讯云 | [score=0.846 recalls=0 avg=0.620 source=memory/2026-06-05-0843.md:144-147]
+
+## Promoted From Short-Term Memory (2026-06-15)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-06-10-1231.md:9:9 -->
+- user: [Wed 2026-06-10 03:11 GMT+8] Write a dream diary entry from these memory fragments: [score=0.844 recalls=0 avg=0.620 source=memory/2026-06-10-1231.md:9-9]

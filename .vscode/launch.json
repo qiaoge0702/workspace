@@ -118,6 +118,21 @@
       "sourceMapPathOverrides": {
         "webpack:///./*": "${webRoot}/*"
       }
+    },
+
+    // ==================== 螺乐好房 (Spring Boot) ====================
+    {
+      "name": "螺乐好房 - AdminApplication",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "com.luole.haofang.admin.AdminApplication",
+      "projectName": "luolehaofang-admin",
+      "cwd": "${workspaceFolder}/luolehaofang-new/server",
+      "env": {
+        "JAVA_HOME": "/opt/homebrew/opt/openjdk@17"
+      },
+      "vmArgs": "-Dspring.profiles.active=dev",
+      "console": "integratedTerminal"
     }
   ]
 }
