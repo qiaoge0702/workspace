@@ -13,6 +13,14 @@
 
 ---
 
+## 子代理体系（2026-07-30 落地）
+
+- **四子代理就位**: dev（开发）/ tester（测试，只报不修）/ reviewer（只读审查）/ doc-sync（文档同步）。配置在 `openclaw.json agents.list`，各自独立工作区 `workspace/<id>/`，宪法三件套 = SOUL.md（角色契约）+ TOOLS.md（工具约束）+ USER.md（极简偏好）。
+- **协作纪律**: 单向流水线 dev → tester → reviewer → doc-sync，子代理间禁止互调（配置层 deny sessions_send/sessions_spawn 双保险），一切经主代理中转。主代理 `subagents.allowAgents` 白名单已含四者。
+- **工具配置教训**: `profile: minimal` 只含 session_status，子代理必须用 `profile: coding` + `deny` 做减法；`compaction` 只能在 agents.defaults 层配置，单代理级非法；`allowAgents`/`tools.profile`/`tools.deny` 均为保护路径，热更新被拦截，必须改文件重启。
+- **项目切换约定**: 一句话指令（"切到 X"）→ 主代理读目标项目 `CONTEXT.md`（五段式舱单：定位/技术栈/拓扑/里程碑/禁区）+ 最新进度快照即开工。drawing-review-system 已建 CONTEXT.md；螺乐好房、DEMAS 目录未找到（待老板提供路径）。
+- **角色归位**: 产品经理/架构师角色保留在主代理（对话密集型），不做成子代理（2026-07-30 与老板确认）。
+
 ## 执行宪法铁律（2026-06-12 新增）
 
 **【绝对铁律】完全遵循设计，不擅自删减**
